@@ -1,0 +1,58 @@
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signin</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+            .signup-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #ffffff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                padding: 20px;
+            }
+            .signup-form {
+                max-width: 500px;
+                width: 100%;
+            }
+            .signup-form h1 {
+                margin-bottom: 20px;
+                color: #343a40;
+            }
+        </style>
+    </head>
+<body class="main">
+    <div class="container">
+        <div class="signup-section">
+    <form action="signin" method="post" class="signup-form">
+        <h1>Sign in</h1>
+        {% csrf_token %}
+        <div class="form-group">
+    <label for="username">Username: </label>
+    <input type="text" name="username" id="username" placeholder="username" required class="form-control"></div>
+    <br><div class="form-group">
+    <label for="pass">Password:</label>
+    <input type="password" name="password" id="password" required class="form-control" placeholder="........"></div>
+    <br>
+    <button type="submit" class="btn btn-info">Sign in</button>
+    <br><br>
+    <p>Dont have an account??</p> 
+<button class="btn btn-warning"><a href = "/signup">Sign up</a></button>
+</form>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

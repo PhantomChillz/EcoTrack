@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .welcome-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .welcome-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        .welcome-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .welcome-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #6c757d;
+        }
+        .welcome-content .btn-primary {
+            font-size: 1.1rem;
+            padding: 10px 20px;
+        }
+        .features-section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .features-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #343a40;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">EcoTrack</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signin">Signin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Expenses">AddExpenses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Expenses">YourExpenses</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="container">
+        <div class="welcome-section">
+            <div class="welcome-content">
+                <h1>Welcome to EcoTrack</h1>
+                <p>Track your expenses effortlessly and stay on top of your finances with our easy-to-use app.</p>
+                <a href="/signup" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <h2>Features</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Feature 1">
+                    <h4>Easy Tracking</h4>
+                    <p>Track your expenses and income with just a few clicks.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Feature 2">
+                    <h4>Detailed Reports</h4>
+                    <p>Generate detailed reports to analyze your spending habits.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Feature 3">
+                    <h4>Secure Data</h4>
+                    <p>Your data is securely stored and protected with top-notch security.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 EcoTrack. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
