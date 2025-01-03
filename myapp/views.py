@@ -56,6 +56,6 @@ def updateexpense(request,id):
         queryset.save()
         return redirect('/Expenses')
     return render(request,"UpdateExpenses.html")
-# Create your views here.
+
  
  
